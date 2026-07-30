@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="space_black">#0B0F1A</color>
+    <color name="space_blue">#16213E</color>
+    <color name="card_background">#1F2937</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#CFCFCF</color>
+</resources>

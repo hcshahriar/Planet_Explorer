@@ -1,0 +1,42 @@
+<resources>
+    <!-- App & General Strings -->
+    <string name="app_name">Planet Explorer</string>
+    <string name="title_planet_explorer">Planet Explorer</string>
+    <string name="planet_name">Mercury</string>
+    <string name="type">Terrestrial Planet</string>
+
+    <!-- Detail Screen Strings -->
+    <string name="scientific_data">Scientific Data</string>
+    <string name="distance">57.9M km</string>
+    <string name="gravity">3.7 m/s²</string>
+    <string name="moons">0</string>
+    <string name="temperature">167°C</string>
+    <string name="mission_report">Space Mission Report</string>
+    <string name="mission_status">Extreme surface temperatures and radiation environment.</string>
+    <string name="interesting_fact_title">Interesting Fact</string>
+    <string name="interesting_fact">Mercury is the smallest planet in the solar system and closest to the Sun.</string>
+
+    <!-- Content Descriptions & Placeholders -->
+    <string name="planet_name_placeholder">Planet Name</string>
+    <string name="planet_desc_placeholder">Planet Description</string>
+    <string name="favorite_heart_desc">Favorite Heart</string>
+    <string name="planet_image_desc">Planet Image</string>
+
+    <!-- Planet Comparison Tool Strings -->
+    <string name="cd_back">Back</string>
+    <string name="title_planet_comparison">Planet Comparison</string>
+    <string name="cd_planet_1_image">Planet 1 Image</string>
+    <string name="cd_planet_2_image">Planet 2 Image</string>
+    <string name="label_gravity">GRAVITY</string>
+    <string name="default_gravity_1">9.8 m/s²</string>
+    <string name="default_gravity_2">3.7 m/s²</string>
+    <string name="label_moons">MOONS</string>
+    <string name="default_moons_1">1 Moon</string>
+    <string name="default_moons_2">2 Moons</string>
+    <string name="label_distance">DISTANCE FROM SUN</string>
+    <string name="default_distance_1">149.6 M km</string>
+    <string name="default_distance_2">227.9 M km</string>
+    <string name="default_temp_1">15°C</string>
+    <string name="default_temp_2">-63°C</string>
+    <string name="label_temperature">AVERAGE TEMPERATURE</string>
+</resources>

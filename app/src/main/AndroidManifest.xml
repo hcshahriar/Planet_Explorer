@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_app_saturn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_saturn_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlanetExplorer">
+
+        <!-- 1. SPLASH ACTIVITY (App Launcher with Dark Theme) -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.PlanetExplorer.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. LOGIN ACTIVITY -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 3. REGISTER ACTIVITY -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 4. MAIN ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 5. PLANET DETAIL ACTIVITY -->
+        <activity
+            android:name=".PlanetDetailActivity"
+            android:exported="false" />
+
+        <!-- 6. COMPARE ACTIVITY -->
+        <activity
+            android:name=".CompareActivity"
+            android:exported="false" />
+
+        <!-- 7. QUIZ ACTIVITY -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+
+        <!-- 8. NASA HUB ACTIVITY -->
+        <activity
+            android:name=".NasaHubActivity"
+            android:exported="false" />
+
+        <!-- 9. MARS ROVER ACTIVITY -->
+        <activity
+            android:name=".MarsRoverActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

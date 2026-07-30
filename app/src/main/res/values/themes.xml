@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlanetExplorer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status Bar Color fix for dark space theme -->
+        <item name="android:statusBarColor">#050816</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.PlanetExplorer" parent="Base.Theme.PlanetExplorer" />
+
+    <!-- Dark theme for Splash Screen to prevent white flash -->
+    <style name="Theme.PlanetExplorer.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">#050816</item>
+        <item name="android:statusBarColor">#050816</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
