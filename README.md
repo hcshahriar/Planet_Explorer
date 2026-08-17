@@ -1,404 +1,403 @@
 # 🪐 Planet Explorer
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Android-Application-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-Programming-orange?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/XML-UI-1572B6?style=for-the-badge&logo=xml&logoColor=white" />
-  <img src="https://img.shields.io/badge/Android%20Studio-IDE-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
+  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/UI-XML-1572B6?style=for-the-badge&logo=xml&logoColor=white">
+  <img src="https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white">
 </p>
 
 <p align="center">
-  <strong> Explore the Solar System. Discover new worlds. </strong>
+   <strong>Explore. Discover. Learn.</strong> 
 </p>
 
 <p align="center">
-  A modern Android application for exploring the planets of our Solar System
-  through interactive information, scientific data, and fascinating space facts.
+  A modern Android application for exploring the fascinating worlds of our Solar System.
 </p>
 
 ---
 
-##  About the Project
+##  About Planet Explorer
 
-**Planet Explorer** is an Android application created to provide a simple, interactive,
-and educational way to explore the **8 planets of our Solar System**.
+**Planet Explorer** is an educational Android application designed to help users explore the **8 planets of our Solar System** in a simple, interactive, and visually appealing way.
 
-Users can browse through the planets and open a dedicated details page containing
-scientific information, space mission information, and interesting facts.
+Users can browse the planets, select a planet, and view detailed information including scientific data, space mission information, and interesting facts.
 
-The project is being developed as a **university Android application project**
-using **Java, XML, Android Studio, and Android SDK**.
+The project is being developed using **Java, XML, Android Studio, and Android SDK**.
 
 ---
 
 ## ✨ Features
 
-### 🪐 Explore the Planets
+### 🪐 8 Planets
 
-The application currently includes all eight planets:
+Explore all eight planets:
 
-| Planet | Classification |
-|:---:|:---|
-|  Mercury | Terrestrial Planet |
-|  Venus   | Terrestrial Planet |
-|  Earth   | Terrestrial Planet |
-|  Mars    | Terrestrial Planet |
-|  Jupiter | Gas Giant |
-| Saturn   | Gas Giant |
-| Uranus   | Ice Giant |
-|  Neptune | Ice Giant |
+-  Mercury
+-  Venus
+-  Earth
+-  Mars
+-  Jupiter
+-  Saturn
+-  Uranus
+-  Neptune
 
----
+###  Scientific Data
 
-###  Scientific Information
+Each planet provides:
 
-Each planet provides useful information such as:
-
-- 🌍 Planet type
-- 📏 Distance from the Sun
-- 🧲 Gravity
-- 🌙 Number of moons
-- 🌡️ Temperature
-
----
+- Planet Type
+- Distance from the Sun
+- Gravity
+- Number of Moons
+- Temperature
 
 ###  Space Mission Report
 
-Each planet also contains a short space mission section describing
-its exploration or mission-related information.
-
----
+Each planet includes a short mission-related section containing information about space exploration and missions.
 
 ###  Interesting Facts
 
-Every planet includes a short and easy-to-understand fact to help users
-learn something interesting about that world.
+Discover simple and interesting facts about every planet.
+
+###  Space-Themed UI
+
+The application uses a dark, space-inspired design with large planet images and a clean information layout.
 
 ---
 
 ##  Application Flow
 
-```text
-                PLANET EXPLORER
-                       │
-                       ▼
-                ┌───────────────┐
-                │  Main Screen  │
-                └───────┬───────┘
-                        │
-                        ▼
-                ┌───────────────┐
-                │ Planet List   │
-                │ RecyclerView  │
-                └───────┬───────┘
-                        │
-                 Select a Planet
-                        │
-                        ▼
-              ┌───────────────────┐
-              │ Planet Details    │
-              └─────────┬─────────┘
-                        │
-          ┌─────────────┼─────────────┐
-          ▼             ▼             ▼
-         Data        Mission        Facts
+**Main Screen**
 
+↓
 
-Technologies:
+**Planet List**
 
-| Technology             | Purpose             |
-| ---------------------- | ------------------- |
-| ☕ Java                 | Application logic   |
-| 🧩 XML                 | User interface      |
-| 🤖 Android Studio      | Development         |
-| 📦 Android SDK         | Android development |
-| 📋 RecyclerView        | Planet list         |
-| 🔗 Intent              | Screen navigation   |
-| 🖼️ Drawable Resources  | Planet images       |
-| ⚙️ Gradle              | Build system        |
-| 📱 Android Emulator    | Testing             |
+↓
 
+**Select a Planet**
 
-Project Structure:
+↓
 
-Planet_Explorer/
-│
-├── app/
-│   │
-│   └── src/
-│       └── main/
-│           │
-│           ├── java/
-│           │   └── com/
-│           │       └── shahriar/
-│           │           └── planetexplorer/
-│           │               │
-│           │               ├── MainActivity.java
-│           │               ├── PlanetDetailActivity.java
-│           │               │
-│           │               ├── adapter/
-│           │               │   └── PlanetAdapter.java
-│           │               │
-│           │               ├── model/
-│           │               │   └── Planet.java
-│           │               │
-│           │               └── data/
-│           │                   └── PlanetData.java
-│           │
-│           ├── res/
-│           │   │
-│           │   ├── drawable/
-│           │   │   ├── mercury.png
-│           │   │   ├── venus.png
-│           │   │   ├── earth.png
-│           │   │   ├── mars.png
-│           │   │   ├── jupiter.png
-│           │   │   ├── saturn.png
-│           │   │   ├── uranus.png
-│           │   │   └── neptune.png
-│           │   │
-│           │   ├── layout/
-│           │   │   ├── activity_main.xml
-│           │   │   ├── activity_planet_detail.xml
-│           │   │   └── item_planet.xml
-│           │   │
-│           │   └── values/
-│           │       ├── colors.xml
-│           │       ├── strings.xml
-│           │       └── themes.xml
-│           │
-│           └── AndroidManifest.xml
-│
-├── gradle/
-├── build.gradle.kts
-├── settings.gradle.kts
-└── README.md
+**Planet Detail Screen**
 
+↓
 
-How the Application Works
-The basic process is:
+**Scientific Data + Mission Report + Interesting Fact**
 
-PlanetData
-     │
-     ▼
-Planet Model
-     │
-     ▼
-PlanetAdapter
-     │
-     ▼
-RecyclerView
-     │
-     ▼
-User selects planet
-     │
-     ▼
-Intent
-     │
-     ▼
-PlanetDetailActivity
-     │
-     ▼
-Detailed Planet Information
+---
 
+##  Technologies Used
 
+| Technology | Purpose |
+|---|---|
+| ☕ Java | Application logic |
+| 🧩 XML | User interface |
+| 🤖 Android Studio | Development environment |
+| 📦 Android SDK | Android development |
+| 📋 RecyclerView | Planet list |
+| 🔗 Intent | Screen navigation |
+| 🖼️ Drawable Resources | Planet images |
+| ⚙️ Gradle | Project build system |
+| 📱 Android Emulator | Application testing |
 
-Development Progress.....
-Phase 1 — Project Setup
-Android Studio setup
-Android SDK configuration
-Android Emulator setup
-Planet Explorer project creation
-Initial application testing
+---
 
-Phase 2 — Basic User Interface
-Main Activity
-XML layout
-Basic application interface
-Android project structure
+## Project Structure
 
-Phase 3 — Planet List
-RecyclerView implementation
-Planet model
-Planet data
-Planet adapter
-Planet cards
-8 planet images
-Planet selection
+The project follows a simple and organized Android structure.
 
-Phase 4 — Planet Details
-Planet Detail Activity
-Intent navigation
-Clickable planet cards
-Detailed planet screen
+### Java
 
-Phase 4.5 — Scientific Information
+- `MainActivity.java` — Main application screen
+- `PlanetDetailActivity.java` — Planet information screen
+- `PlanetAdapter.java` — RecyclerView adapter
+- `Planet.java` — Planet data model
+- `PlanetData.java` — Planet information provider
+
+### XML
+
+- `activity_main.xml` — Main screen layout
+- `activity_planet_detail.xml` — Planet details layout
+- `item_planet.xml` — Individual planet card layout
+
+### Images
+
+The application contains images for:
+
+**Mercury • Venus • Earth • Mars • Jupiter • Saturn • Uranus • Neptune**
+
+---
+
+##  How It Works
+
+The application follows a simple data flow:
+
+**PlanetData**
+
+↓
+
+**Planet Model**
+
+↓
+
+**PlanetAdapter**
+
+↓
+
+**RecyclerView**
+
+↓
+
+**User Selects Planet**
+
+↓
+
+**Intent**
+
+↓
+
+**PlanetDetailActivity**
+
+↓
+
+**Detailed Planet Information**
+
+---
+
+##  Development Progress
+
+###  Phase 1 — Project Setup
+
+- Android Studio setup
+- Android SDK configuration
+- Android Emulator setup
+- Planet Explorer project creation
+- Initial application testing
+
+###  Phase 2 — Basic Interface
+
+- Main Activity
+- XML layout
+- Basic Android UI
+- Project structure
+
+###  Phase 3 — Planet List
+
+- RecyclerView
+- Planet model
+- Planet data
+- Planet adapter
+- Planet cards
+- Planet images
+- Planet selection
+
+###  Phase 4 — Planet Details
+
+- Planet Detail Activity
+- Intent navigation
+- Clickable planet cards
+- Planet detail screen
+
+###  Phase 4.5 — Enhanced Planet Information
 
 Added:
 
-Planet type
-Distance from the Sun
-Gravity
-Number of moons
-Temperature
-Space mission status
-Interesting facts
-Improved dark space-themed UI
-Phase 5 — Planned Improvements
+- Planet type
+- Distance from the Sun
+- Gravity
+- Moons
+- Temperature
+- Space mission status
+- Interesting facts
+- Dark space-themed interface
 
-Future development may include:
+###  Phase 5 — Future Development
 
-🔐 Login and Registration
-🔎 Planet Search
-❤️ Favorite Planets
-⚖️ Planet Comparison
-🧠 Space Quiz
-🪐 Planet Animations
-🌌 Interactive Solar System
-🛰️ Space Mission Information
-⚙️ Application Settings
-💻 Requirements
+Planned improvements include:
 
-To run Planet Explorer_you need:
+- 🔐 Login and Registration
+- 🔎 Planet Search
+- ❤️ Favorite Planets
+- ⚖️ Planet Comparison
+- 🧠 Space Quiz
+- 🪐 Planet Animations
+- 🌌 Interactive Solar System
+- 🛰️ Space Mission Information
+- ⚙️ Settings
 
-Android Studio
-Java / JDK
-Android SDK
-Android SDK Platform Tools
-Android SDK Build Tools
-Android Emulator or Android device
-Git
+---
 
-Installation:
+##  Requirements
 
-1. Clone the Repository
-git clone https://github.com/hcshahriar/Planet_Explorer.git
-2. Open in Android Studio
+To run Planet Explorer, you need:
 
-Open the downloaded project folder using Android Studio.
+- Android Studio
+- Java / JDK
+- Android SDK
+- Android SDK Platform Tools
+- Android Emulator or Android device
+- Git
 
-3. Wait for Gradle Sync
+---
 
-Allow Android Studio to download and configure the required dependencies.
+##  Installation
 
-4. Start an Emulator
+### 1. Clone the Repository
 
-Open:
+Use the repository URL from the **Code** button on GitHub.
 
-Android Studio
-→ Device Manager
-→ Start Emulator
+### 2. Open the Project
 
-5. Run the Application
+Open the project folder in **Android Studio**.
 
-Click:
-▶ Run
+### 3. Wait for Gradle Sync
 
-The application should launch on the Android Emulator.
+Allow Android Studio to finish downloading and syncing the required project files.
 
-Cross-Platform Support
+### 4. Start an Emulator
 
-The project can be developed on different operating systems.
+Open Android Studio's **Device Manager** and start an Android emulator.
 
-🍎 macOS
+### 5. Run the Application
 
-Android Studio + Android SDK + Emulator
+Click the **Run ▶** button in Android Studio.
 
-🪟 Windows
+The Planet Explorer application should launch on the emulator.
 
-Android Studio + Android SDK + Emulator
+---
 
-The project source code remains the same.
+## Cross-Platform Development
 
-Only operating-system-specific SDK paths may be different.
+Planet Explorer can be developed on:
 
-Resource Organization
-Java Files
-app/src/main/java/
-XML Layouts
-app/src/main/res/layout/
-Planet Images
-app/src/main/res/drawable/
-Strings
-app/src/main/res/values/strings.xml
-Colors & Themes
-app/src/main/res/values/
+-  macOS
+-  Windows
+-  Linux
 
-This organization keeps the project clean and easy to maintain.
+The Android project files remain the same across these operating systems.
 
-Testing
+Only local Android SDK paths and emulator configurations may differ.
 
-The application is tested using the Android Emulator.
+---
+
+##  Testing
+
+The application is tested using an Android Emulator.
 
 Testing includes:
 
-Application launch
-Planet list display
-Planet images
-Planet selection
-Detail screen navigation
-Scientific information
-Screen scrolling
-Dark theme
-Different planet data
+- Application launch
+- Planet list
+- Planet images
+- Planet selection
+- Detail screen navigation
+- Scientific information
+- Scrolling
+- Dark theme
+- Planet-specific information
 
+---
 
-Learning Objectives:
+##  Screenshots
 
-This project helps develop practical skills in:
+###  Main Screen
 
-Java programming
-Android application development
-XML layouts
-RecyclerView
-Activities
-Intents
-Android resources
-Gradle
-Android SDK
-Emulator testing
-Git
-GitHub
-UI/UX design
-Project organization
+Screenshots will be added as the project continues to develop.
 
+###  Planet Details
 
-Collaboration:
+Screenshots will be added here.
 
-Planet Explorer can be developed collaboratively using Git and GitHub.
+###  Future Solar System View
 
-Recommended workflow:
+More screenshots will be added in future development phases.
 
-Clone Repository
-       ↓
-Pull Latest Changes
-       ↓
-Create / Modify Code
-       ↓
-Test Application
-       ↓
-Commit Changes
-       ↓
-Push to GitHub
+---
 
-This makes it possible for developers using macOS, Windows, or Linux
-to work on the same Android project.
+##  Learning Objectives
 
-Future Vision:
+This project helps develop practical experience with:
 
-The goal of Planet Explorer is to become a complete educational
-Solar System application.
+- Java programming
+- Android application development
+- XML layouts
+- RecyclerView
+- Activities
+- Intents
+- Android resources
+- Gradle
+- Android SDK
+- Emulator testing
+- Git and GitHub
+- UI/UX design
+- Software project organization
 
-Future versions may provide:
+---
 
-🌌 Interactive Solar System
-        ↓
-🪐 Explore Planets
-        ↓
-🔬 Scientific Information
-        ↓
-🚀 Space Missions
-        ↓
-🧠 Learn Through Quizzes
-        ↓
-⭐ Save Favorite Worlds
+##  Collaboration
+
+The project can be developed collaboratively using Git and GitHub.
+
+A simple workflow is:
+
+**Clone → Pull → Code → Test → Commit → Push**
+
+This allows developers using **macOS, Windows, or Linux** to work on the same Android project.
+
+---
+
+## Future Vision
+
+The long-term goal of Planet Explorer is to become a complete educational Solar System application.
+
+Future versions may include:
+
+ Interactive Solar System
+
+ Planet Exploration
+
+ Scientific Information
+
+ Space Missions
+
+ Educational Quizzes
+
+ Favorite Planets
+
+ Planet Comparison
+
+---
+
+##  Developer
+
+<p align="center">
+
+### Shahriar Chowdhury
+
+**Planet Explorer - Android Application.**
+
+Built with using **Java + XML + Android Studio.**
+
+</p>
+
+---
+
+##  Support the Project
+
+If you like **Planet Explorer**, consider giving the repository a ⭐.
+
+Your support helps motivate continued development.
+
+---
+
+<p align="center">
+
+#  Explore. Discover. Learn. 
+
+### 🪐 Planet Explorer
+
+*The Solar System is waiting....*
+
+</p>
